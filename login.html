@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="logo.png">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Sign in with email</h2>
+            <form id="loginForm" method="post">
+                <input type="hidden" name="action" value="login">
+                <div class="input-box">
+                    <i class="bx bx-user"></i>
+                    <input type="email" name="email" class="input-field" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <i class="bx bx-lock-alt"></i>
+                    <input type="password" name="password" class="input-field" placeholder="Password" required>
+                </div>
+                <div class="input-box">
+                    <input type="submit" value="Get Started">
+                </div>
+            </form>
+            <div class="sign_up">
+                <p>Don't have an account? <a href="#" id="signupBtn">Sign Up</a></p>
+            </div>
+        </div>
+        <div class="register-box" id="registerBox" style="display:none;">
+            <h2>Create an Account</h2>
+            <form id="registerForm" method="post">
+                <input type="hidden" name="action" value="register">
+                <div class="two-forms">
+                    <div class="input-box">
+                        <i class="bx bx-user"></i>
+                        <input type="text" name="firstname" class="input-field" placeholder="Firstname" required>
+                    </div>
+                    <div class="input-box">
+                        <i class="bx bx-user"></i>
+                        <input type="text" name="lastname" class="input-field" placeholder="Lastname" required>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <i class="bx bx-envelope"></i>
+                    <input type="email" name="email" class="input-field" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <i class="bx bx-lock-alt"></i>
+                    <input type="password" name="password" class="input-field" placeholder="Password" required>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Register">
+                </div>
+                <div class="sign_in">
+                    <p>Already have an account? <a href="#" id="loginBtn">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js" defer></script>
+</body>
+</html>
